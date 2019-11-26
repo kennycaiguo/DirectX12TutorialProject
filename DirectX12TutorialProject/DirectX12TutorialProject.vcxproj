@@ -150,8 +150,17 @@
     <ClInclude Include="Events.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="HighResolutionClock.h" />
+    <ClInclude Include="inc\Application.h" />
+    <ClInclude Include="inc\CommandQueue.h" />
     <ClInclude Include="Inc\d3dx12.h" />
+    <ClInclude Include="inc\DX12LibPCH.h" />
+    <ClInclude Include="inc\Events.h" />
+    <ClInclude Include="inc\Game.h" />
     <ClInclude Include="Inc\Helpers.h" />
+    <ClInclude Include="inc\HighResolutionClock.h" />
+    <ClInclude Include="inc\KeyCodes.h" />
+    <ClInclude Include="inc\Tutorial.h" />
+    <ClInclude Include="inc\Window.h" />
     <ClInclude Include="KeyCodes.h" />
     <ClInclude Include="Tutorial.h" />
     <ClInclude Include="Window.h" />
