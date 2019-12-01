@@ -142,4 +142,8 @@ bool Tutorial::LoadContent()
 	dsvHeapDesc.Type = D3D12_DESCRIPTOR_HEAP_TYPE_DSV;
 	dsvHeapDesc.Flags = D3D12_DESCRIPTOR_HEAP_FLAG_NONE;
 	ThrowIfFailed(device->CreateDescriptorHeap(&dsvHeapDesc,IID_PPV_ARGS(&m_DSVHeap)));
+
+	// Load the vertex shader.
+	ComPtr<ID3DBlob> vertexShaderBlob;
+	ThrowIfFailed(D3DReadFileToBlob(L"VertexShader.cso"))
 }
