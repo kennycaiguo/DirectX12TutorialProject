@@ -104,11 +104,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\santo\source\repos\ElonCosta\DirectX12TutorialProject\DirectX12TutorialProject\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <FxCompile>
+      <ShaderModel>5.1</ShaderModel>
+    </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -145,51 +149,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Application.h" />
-    <ClInclude Include="CommandQueue.h" />
-    <ClInclude Include="d3dx12.h" />
-    <ClInclude Include="DX12LibPCH.h" />
-    <ClInclude Include="Events.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="HighResolutionClock.h" />
-    <ClInclude Include="inc\Application.h" />
-    <ClInclude Include="inc\CommandQueue.h" />
-    <ClInclude Include="Inc\d3dx12.h" />
-    <ClInclude Include="inc\DX12LibPCH.h" />
-    <ClInclude Include="inc\Events.h" />
-    <ClInclude Include="inc\Game.h" />
-    <ClInclude Include="Inc\Helpers.h" />
-    <ClInclude Include="inc\HighResolutionClock.h" />
-    <ClInclude Include="inc\KeyCodes.h" />
-    <ClInclude Include="inc\Tutorial.h" />
-    <ClInclude Include="inc\Window.h" />
-    <ClInclude Include="KeyCodes.h" />
-    <ClInclude Include="Tutorial.h" />
-    <ClInclude Include="Window.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="CommandQueue.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Tutorial.cpp" />
-    <ClCompile Include="Window.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <FxCompile Include="PixelShader.hlsl">
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+    <FxCompile Include="shaders\PixelShader.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.1</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.1</ShaderModel>
     </FxCompile>
-    <FxCompile Include="VertexShader.hlsl">
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+    <FxCompile Include="shaders\VertexShader.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
-      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.1</ShaderModel>
-      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.1</ShaderModel>
     </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="src\CommandQueue.cpp" />
+    <ClCompile Include="src\DX12LibPCH.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\HighResolutionClock.cpp" />
+    <ClCompile Include="src\Tutorial.cpp" />
+    <ClCompile Include="src\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\Application.h" />
+    <ClInclude Include="Inc\CommandQueue.h" />
+    <ClInclude Include="Inc\DX12LibPCH.h" />
+    <ClInclude Include="Inc\Events.h" />
+    <ClInclude Include="Inc\Game.h" />
+    <ClInclude Include="Inc\Helpers.h" />
+    <ClInclude Include="Inc\HighResolutionClock.h" />
+    <ClInclude Include="Inc\KeyCodes.h" />
+    <ClInclude Include="Inc\Tutorial.h" />
+    <ClInclude Include="Inc\Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
