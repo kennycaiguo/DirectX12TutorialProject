@@ -1261,7 +1261,7 @@ struct CD3DX12_ROOT_SIGNATURE_DESC : public D3D12_ROOT_SIGNATURE_DESC
 		UINT numParameters,
 		_In_reads_opt_(numParameters) const D3D12_ROOT_PARAMETER* _pParameters,
 		UINT numStaticSamplers = 0,
-		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC* _pStaticSamplers = NULL,
+		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC * _pStaticSamplers = NULL,
 		D3D12_ROOT_SIGNATURE_FLAGS flags = D3D12_ROOT_SIGNATURE_FLAG_NONE)
 	{
 		Init(numParameters, _pParameters, numStaticSamplers, _pStaticSamplers, flags);
@@ -1275,7 +1275,7 @@ struct CD3DX12_ROOT_SIGNATURE_DESC : public D3D12_ROOT_SIGNATURE_DESC
 		UINT numParameters,
 		_In_reads_opt_(numParameters) const D3D12_ROOT_PARAMETER* _pParameters,
 		UINT numStaticSamplers = 0,
-		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC* _pStaticSamplers = NULL,
+		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC * _pStaticSamplers = NULL,
 		D3D12_ROOT_SIGNATURE_FLAGS flags = D3D12_ROOT_SIGNATURE_FLAG_NONE)
 	{
 		Init(*this, numParameters, _pParameters, numStaticSamplers, _pStaticSamplers, flags);
@@ -1286,7 +1286,7 @@ struct CD3DX12_ROOT_SIGNATURE_DESC : public D3D12_ROOT_SIGNATURE_DESC
 		UINT numParameters,
 		_In_reads_opt_(numParameters) const D3D12_ROOT_PARAMETER* _pParameters,
 		UINT numStaticSamplers = 0,
-		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC* _pStaticSamplers = NULL,
+		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC * _pStaticSamplers = NULL,
 		D3D12_ROOT_SIGNATURE_FLAGS flags = D3D12_ROOT_SIGNATURE_FLAG_NONE)
 	{
 		desc.NumParameters = numParameters;
@@ -1546,7 +1546,7 @@ struct CD3DX12_VERSIONED_ROOT_SIGNATURE_DESC : public D3D12_VERSIONED_ROOT_SIGNA
 		UINT numParameters,
 		_In_reads_opt_(numParameters) const D3D12_ROOT_PARAMETER* _pParameters,
 		UINT numStaticSamplers = 0,
-		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC* _pStaticSamplers = NULL,
+		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC * _pStaticSamplers = NULL,
 		D3D12_ROOT_SIGNATURE_FLAGS flags = D3D12_ROOT_SIGNATURE_FLAG_NONE)
 	{
 		Init_1_0(numParameters, _pParameters, numStaticSamplers, _pStaticSamplers, flags);
@@ -1555,7 +1555,7 @@ struct CD3DX12_VERSIONED_ROOT_SIGNATURE_DESC : public D3D12_VERSIONED_ROOT_SIGNA
 		UINT numParameters,
 		_In_reads_opt_(numParameters) const D3D12_ROOT_PARAMETER1* _pParameters,
 		UINT numStaticSamplers = 0,
-		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC* _pStaticSamplers = NULL,
+		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC * _pStaticSamplers = NULL,
 		D3D12_ROOT_SIGNATURE_FLAGS flags = D3D12_ROOT_SIGNATURE_FLAG_NONE)
 	{
 		Init_1_1(numParameters, _pParameters, numStaticSamplers, _pStaticSamplers, flags);
@@ -1569,7 +1569,7 @@ struct CD3DX12_VERSIONED_ROOT_SIGNATURE_DESC : public D3D12_VERSIONED_ROOT_SIGNA
 		UINT numParameters,
 		_In_reads_opt_(numParameters) const D3D12_ROOT_PARAMETER* _pParameters,
 		UINT numStaticSamplers = 0,
-		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC* _pStaticSamplers = NULL,
+		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC * _pStaticSamplers = NULL,
 		D3D12_ROOT_SIGNATURE_FLAGS flags = D3D12_ROOT_SIGNATURE_FLAG_NONE)
 	{
 		Init_1_0(*this, numParameters, _pParameters, numStaticSamplers, _pStaticSamplers, flags);
@@ -1580,7 +1580,7 @@ struct CD3DX12_VERSIONED_ROOT_SIGNATURE_DESC : public D3D12_VERSIONED_ROOT_SIGNA
 		UINT numParameters,
 		_In_reads_opt_(numParameters) const D3D12_ROOT_PARAMETER* _pParameters,
 		UINT numStaticSamplers = 0,
-		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC* _pStaticSamplers = NULL,
+		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC * _pStaticSamplers = NULL,
 		D3D12_ROOT_SIGNATURE_FLAGS flags = D3D12_ROOT_SIGNATURE_FLAG_NONE)
 	{
 		desc.Version = D3D_ROOT_SIGNATURE_VERSION_1_0;
@@ -1595,7 +1595,7 @@ struct CD3DX12_VERSIONED_ROOT_SIGNATURE_DESC : public D3D12_VERSIONED_ROOT_SIGNA
 		UINT numParameters,
 		_In_reads_opt_(numParameters) const D3D12_ROOT_PARAMETER1* _pParameters,
 		UINT numStaticSamplers = 0,
-		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC* _pStaticSamplers = NULL,
+		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC * _pStaticSamplers = NULL,
 		D3D12_ROOT_SIGNATURE_FLAGS flags = D3D12_ROOT_SIGNATURE_FLAG_NONE)
 	{
 		Init_1_1(*this, numParameters, _pParameters, numStaticSamplers, _pStaticSamplers, flags);
@@ -1606,7 +1606,7 @@ struct CD3DX12_VERSIONED_ROOT_SIGNATURE_DESC : public D3D12_VERSIONED_ROOT_SIGNA
 		UINT numParameters,
 		_In_reads_opt_(numParameters) const D3D12_ROOT_PARAMETER1* _pParameters,
 		UINT numStaticSamplers = 0,
-		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC* _pStaticSamplers = NULL,
+		_In_reads_opt_(numStaticSamplers) const D3D12_STATIC_SAMPLER_DESC * _pStaticSamplers = NULL,
 		D3D12_ROOT_SIGNATURE_FLAGS flags = D3D12_ROOT_SIGNATURE_FLAG_NONE)
 	{
 		desc.Version = D3D_ROOT_SIGNATURE_VERSION_1_1;
@@ -2009,7 +2009,7 @@ inline UINT64 UpdateSubresources(
 	_In_reads_(NumSubresources) D3D12_SUBRESOURCE_DATA* pSrcData)
 {
 	UINT64 RequiredSize = 0;
-	UINT64 MemToAlloc = static_cast<UINT64>(sizeof(D3D12_PLACED_SUBRESOURCE_FOOTPRINT) + sizeof(UINT) + sizeof(UINT64))* NumSubresources;
+	UINT64 MemToAlloc = static_cast<UINT64>(sizeof(D3D12_PLACED_SUBRESOURCE_FOOTPRINT) + sizeof(UINT) + sizeof(UINT64)) * NumSubresources;
 	if (MemToAlloc > SIZE_MAX)
 	{
 		return 0;
@@ -2074,7 +2074,7 @@ inline ID3D12CommandList* const* CommandListCast(t_CommandListType* const* pp)
 	// ExecuteCommandLists.
 	// This cast is valid as long as the const-ness is respected. D3D12 APIs do
 	// respect the const-ness of their arguments.
-	return reinterpret_cast<ID3D12CommandList* const*>(pp);
+	return reinterpret_cast<ID3D12CommandList * const*>(pp);
 }
 
 //------------------------------------------------------------------------------------------------
